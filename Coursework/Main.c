@@ -27,6 +27,14 @@ int main ( int argc , char **argv )
                         break;
                     }
                 }
+
+                 // Check if the value is already present in the current column
+                for (int k = 0; k < i; k++) {
+                    if (sud[k][j] == temp) {
+                        check = true;
+                        break;
+                    }
+                }
             } while (check);
 
             sud[i][j] = temp;

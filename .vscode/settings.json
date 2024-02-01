@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "emptyboard.h": "c"
+        "emptyboard.h": "c",
+        "type_traits": "c"
     }
 }
