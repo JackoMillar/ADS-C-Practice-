@@ -1,10 +1,9 @@
-#pragma once
-
 #include <stdio.h>
 #include <stdlib.h>
-void empty_board(int sud[9][9]);
 
-void empty_board(int sud[9][9])
+#include "data.h"
+
+void print_board(int sud[9][9])
 {
     for (int i = 0; i < 9; i++)
     {
