@@ -1,5 +1,6 @@
-compReplace:
-	cl /EHsc /c Main.c GenerateValues.c PrintBoard.c
+hellomake:
+	echo 'test'
+	gcc -o data Main.c GenerateValues.c PrintBoard.c -I
 	link Main.obj GenerateValues.obj PrintBoard.obj
 	
 clean:
