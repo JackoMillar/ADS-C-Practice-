@@ -1,9 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "data.h"
+//#include "data.h"
 
-void print_board(int sud[9][9])
+void prog_bar(int sud[9][9], int diff)
+{
+    int progress = diff;
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 9; j++)
+        {
+            if (sud[i][j] == 0)
+            {
+                progress--;
+            }
+        }
+    }
+    printf("[");
+    for (int i = 1; i < diff; i++)
+    {
+        if (i <= progress)
+        {
+            printf("#");
+        }
+        else
+        {
+            printf("-");
+        }
+    }
+    printf("]%d/%d\n", progress, diff);
+}
+
+void sud_board(int sud[9][9])
 {
     for (int i = 0; i < 9; i++)
     {

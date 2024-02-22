@@ -1,8 +1,6 @@
-hellomake:
-	echo 'test'
-	gcc -o data Main.c GenerateValues.c PrintBoard.c -I
-	link Main.obj GenerateValues.obj PrintBoard.obj
-	
+Game:
+	gcc Main.c utilities.c PrintBoard.c GenerateValues.c -o Main
+
 clean:
 	del *.obj
 	del *.exe

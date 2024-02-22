@@ -2,7 +2,8 @@
     "files.associations": {
         "emptyboard.h": "c",
         "type_traits": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "stdbool.h": "c"
     },
     "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
     "makefile.configurations": [
@@ -19,15 +20,14 @@
     "makefile.makePath": "C:\\MinGW\\bin\\mingw32-make",
     "makefile.launchConfigurations": [
         {
-            "cwd": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code",
-            "binaryPath": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code\\Main.exe",
+            "cwd": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code\\Coursework",
+            "binaryPath": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code\\Coursework\\Main.exe",
             "binaryArgs": []
         },
         {
-            "cwd": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code",
-            "binaryPath": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code\\a.out",
+            "cwd": "c:/Users/Jack Millar/OneDrive - Edinburgh Napier University/Year2-B/Algorithms and Data Structures/Code/Coursework",
+            "binaryPath": "c:\\Users\\Jack Millar\\OneDrive - Edinburgh Napier University\\Year2-B\\Algorithms and Data Structures\\Code\\Coursework\\Main.exe",
             "binaryArgs": []
         }
     ]
 }
-

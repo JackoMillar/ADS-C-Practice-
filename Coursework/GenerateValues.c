@@ -5,35 +5,6 @@
 
 #include "data.h"
 
-bool isValid(int sud[9][9], int row, int col, int num) 
-{
-    // Check if 'num' is not present in the current row and column
-    for (int i = 0; i < 9; i++) 
-    {
-        if (sud[row][i] == num || sud[i][col] == num)
-        {
-            return false;
-        }
-    }
-
-    // Check if 'num' is not present in the 3x3 subgrid (box)
-    int squareRow = row - row % 3;
-    int squareCol = col - col % 3;
-    for (int i = 0; i < 3; i++) 
-    {
-        for (int j = 0; j < 3; j++) 
-        {
-            if (sud[squareRow + i][squareCol + j] == num) 
-            {
-                return false;
-            }
-        }
-    }
-
-    return true;
-
-}
-
 bool input_numbers(int sud[9][9])
 {
     bool check = false;
@@ -90,8 +61,9 @@ void generateSud(int sud[9][9])
     // Generate a solved Sudoku board
     input_numbers(sud);
 
+    int difficulty = 45;
     // Revert numbers back to zero
-    int removeCount = 45;  // Adjust the difficulty level by changing the number of removed cells, will be done later
+    int removeCount = difficulty;  // Adjust the difficulty level by changing the number of removed cells, will be done later
     while (removeCount > 0) 
     {
         int row = rand() % 9; // find a random row
@@ -104,4 +76,6 @@ void generateSud(int sud[9][9])
             removeCount--;
         }
     }
+    prog_bar(sud, difficulty);
+    sud_board(sud);
 }
